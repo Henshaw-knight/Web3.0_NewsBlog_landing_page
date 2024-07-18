@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    width: 75%;
+    height: 640px;
+    /* background-color: green; */
+    margin: 50px auto;
+}
+
+nav {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    width: 37%;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #66677c;
+    font-size: 14px;
+}
+
+a:hover {
+    color: black;
+}
+
+.bar {
+    display: none;
+}
+
+p {
+    font-size: 13px;
+    /* color: rgba(102,103,124,255); */
+    color: #66677c;
+}
+
+.top-section {
+    /* background-color: yellow; */
+    height: 380px;
+    margin-top: 40px;
+    display: flex;
+    /* gap: 30px; */
+    justify-content: space-between;
+}
+
+.main {
+    width: 67%;
+    height: 100%;
+    /* background-color: purple; */
+}
+
+#main-side-image {
+    width: 100%;
+    height: 60%;
+}
+
+.info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    /* background-color: brown; */
+}
+
+.info div p {
+    margin-bottom: 14px;
+    padding-top: 5px;
+}
+
+
+.info div {
+    /* background-color: blue; */
+    /* padding-left: 110px; */
+    width: 70%;
+}
+
+.info h1 {
+    /* background-color: rgb(248, 47, 47); */
+    width: 35%;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.info div button {
+    /* background-color: orangered;
+    background-color: rgba(241,93,81,255); */
+    background-color: #f15d51;
+    padding: 10px 15px;
+    font-weight: 900;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid white;
+    margin-top: 14px;
+    transition: background-color 0.3s, border 0.1s, color 0.3s;
+    cursor: pointer;
+}
+
+.info div button:hover {
+    background-color: white;
+    border: 2px solid #f15d51;
+    color: #f15d51;
+}
+.side {
+    width: 30%;
+    height: 100%;
+    /* background-color: rgba(0,0,26,255); */
+    background-color: #00001a;
+    padding: 15px 15px;
+}
+
+.side h2 {
+    /* color: rgba(231,169,93,255); */
+    color: #e7a95d;
+}
+
+
+.side div {
+    margin-top: 25px;
+    /* padding-bottom: 20px; */
+    height: 25%;
+    /* background-color: chocolate; */
+}
+
+
+
+.side div h3{
+    color: white;
+}
+
+.side div p {
+    margin-top: 10px;
+    /* color: rgba(142,143,164,255); */
+    color: #8e8fa4;
+}
+
+.top-2 {
+    border-bottom: 1px solid gray;
+}
+
+.bottom-section {
+    height: 130px;
+    /* background-color: lightcoral; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    /* gap: 20px; */
+}
+
+.bottom-section .articles {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    /* background-color: yellow; */
+}
+
+.articles div h4 {
+    margin: 12px 0;
+}
+
+.articles div h2 {
+    /* color: rgba(217,101,92,255); */
+    color: #d9655c;
+}
+
+.articles img {
+    width: 35%;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        height: 100%
+    }
+    ul {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .top-section {
+        flex-direction: column;
+        gap: 50px;
+        height: 70%;
+        /* background-color: peachpuff; */
+    }
+
+    .main, .side {
+        width: 100%;
+    }
+
+    .main {
+        height: 80%;
+    }
+
+    .side {
+        height: 70%;
+    }
+
+    .side div p {
+        padding-bottom: 15px;
+    }
+
+    .main .info {
+        flex-direction: column;
+    }
+
+    .main .info div, .main .info h1 {
+        width: 100%;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+        align-items: center;
+        height: 31%;
+        gap: 30px;
+    }
+
+    .bottom-section .articles {
+        width: 100%;
+        height: 30%;
+        justify-content: left;
+        /* align-items: center; */
+    }
+}
