@@ -1,0 +1,1 @@
+A simple landing page for web 3.0 news and articles
